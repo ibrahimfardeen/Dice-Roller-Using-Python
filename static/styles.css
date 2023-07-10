@@ -1,12 +1,9 @@
 body {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
+    height: 90vh;
     background-color: black;
-}
-
-h1 {
-    color: white;
 }
 
 .dice {
@@ -22,7 +19,9 @@ h1 {
     margin: 10px;
     animation: roll-dice 0.5s linear;
 }
-
+form{
+    text-align: center;
+}
 
 input[type="submit"] {
     padding: 15px 20px;
@@ -33,36 +32,8 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-@keyframes roll-dice {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: black;
-}
-
-h1,
-label {
+h1, label {
     color: white;
-}
-
-input[type="submit"] {
-    padding: 15px 20px;
-    background-color: white;
-    color: black;
-    font-size: large;
-    border: none;
-    cursor: pointer;
 }
 
 @keyframes roll-dice {
