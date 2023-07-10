@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dice Rolling App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dice Rolling App</h1>
+        <form action="/roll_dice" method="post" style="text-align: center;">
+            <label for="num_dice">Number of dice:</label>
+            <input type="number" id="num_dice" name="num_dice" min="1" max="10" required>
+            <br><br>
+            <input type="submit" value="Roll Dice">
+        </form>
+    </div>
+</body>
+
+</html>

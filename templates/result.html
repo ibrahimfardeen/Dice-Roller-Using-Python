@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dice Rolling App - Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h1>Dice Rolling App - Results</h1>
+    <div class="con" style="padding: 0px 120px;">
+    {% for result in dice_results %}
+        <div class="dice" >{{ result }}</div>
+    {% endfor %}
+</div>
+    <br>
+    <form action="/" method="get" style="text-align: center;">
+        <input type="submit" value="Roll Again">
+    </form>
+</div>
+</body>
+</html>
